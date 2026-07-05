@@ -1,0 +1,19 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "asterisk-manager": "^0.2.0",
+    "csv-parser": "^3.2.1",
+    "fs": "^0.0.1-security",
+    "node-telegram-bot-api": "^0.66.0",
+    "ssh2": "^1.17.0"
+  }
+}
