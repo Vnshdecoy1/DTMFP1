@@ -70,9 +70,9 @@ async function startDialingCampaign(filePath, session, chatId, bot) {
 function processNumbers(numbers, session, chatId, bot) {
     const conn = new Client();
     
-    // We use the local SSH key to securely tunnel the calls. 
-    // This allows Windows to trigger calls on Asterisk instantly without an RTP stack.
-    const privateKeyPath = 'C:\\Users\\vansh\\.ssh\\antigravity';
+    // We use an SSH key to securely tunnel the calls.
+    // This allows the bot host to trigger calls on Asterisk instantly without an RTP stack.
+    const privateKeyPath = process.env.ANTIGRAVITY_SSH_KEY || '/root/.ssh/antigravity';
     let privateKey;
     try {
         privateKey = fs.readFileSync(privateKeyPath);

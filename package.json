@@ -12,6 +12,7 @@
   "dependencies": {
     "asterisk-manager": "^0.2.0",
     "csv-parser": "^3.2.1",
+    "dotenv": "^17.4.2",
     "fs": "^0.0.1-security",
     "node-telegram-bot-api": "^0.66.0",
     "ssh2": "^1.17.0"
